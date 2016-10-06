@@ -170,7 +170,7 @@ RUN \
   ### japanese font and boto ### && \
   yum install -y ipa-pgothic-fonts python-boto python-pip && \
   cp /usr/share/fonts/ipa-pgothic/ipagp.ttf /usr/local/src/zabbix/frontends/php/fonts && \
-  pip install pyzabbix && \
+  pip install pyzabbix && pip install requests && \
   yum autoremove -y ipa-pgothic-fonts python-pip && \
   yum clean all && \
   ### branding / menu ### && \
